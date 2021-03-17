@@ -1,0 +1,1 @@
+<a href="<?=$_base?>cron/eurosite/destinations/cities.php" title="Sincronizare orase" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Sincronizare orase</a>

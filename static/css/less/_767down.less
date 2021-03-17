@@ -1,0 +1,424 @@
+.hover-opacity {
+	&:active {
+		color: #fff;
+		opacity: 0.8;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	}
+}
+
+.last-minute {
+	&__list {
+		&__item:active {
+			background-color: #fff;
+		}
+	}
+	&__btn {
+		&:active {
+			color: #fff;
+		}
+		&--green {
+			border-color: @green;
+			&:active {
+				background-color: @green;
+			}
+		}
+		&--blue {
+			border-color: @blue;
+			&:active {
+				background-color: @blue;
+			}
+		}
+		&--orange {
+			border-color: @orange;
+			&:active {
+				background-color: @orange;
+			}
+		}
+	}
+}
+
+.newsletter__landmarks {
+	width: auto;
+}
+
+.footer__payment {
+	margin: 0 auto;
+}
+
+.footer__bottom {
+	.text--11 {
+		text-align: center;
+	}
+}
+
+.swiper-main {
+	&__img {
+		height: 600px;
+		width: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+		font-family: 'object-fit: cover;';
+	}
+	&__countdown {
+		position: absolute;
+		left: 50%;
+		top: 90%;
+		.translate(-50%,-90%);
+	}
+}
+
+.main-filters {
+  .tab-pane{
+    &:first-child{
+      .panel{
+        border-radius:0;
+      }
+    }
+    &:last-child{
+      .panel{
+        border-radius:0;
+      }
+    }
+    .sprite {
+    	&.active {
+    		display: none;
+    	}
+    }
+    &.active {
+    	.sprite {
+	    	&.active {
+					display: inline-block;
+				}
+				&.inactive {
+					display: none;
+				}
+	    }
+	    .panel-default {
+	    	> .panel-heading {
+	    		background-color: #fff;
+	    	}
+	    }
+	    .main-filters__list__item__title {
+	    	color: @dark_blue;
+	    	padding-top: 10px;
+	    }
+	    .main-filters__sprite__wrapper {
+	    	padding-top: 10px;
+	    }
+	    .main-filters__panel__down {
+	    	background-color: @dark_blue;
+	    	display: inline-block;
+	    	float: right;
+	    	height: 39px;
+	    	width: 40px;
+	    	position: relative;
+	    }
+	    .panel-default {
+	    	> .panel-heading {
+	    		padding-top: 0;
+	    		padding-bottom: 0;
+	    		padding-right: 0;
+	    	}
+	    }
+    }
+  }
+  .main-filters__list__item__title {
+  	color: @dark_blue;
+  }
+  .main-filters__panel__down {
+  	display: none;
+  }
+  .main-filters__sprite__wrapper {
+  	width: 26px;
+  	display: inline-block;
+  	text-align: center;
+  }
+  .main-filters__list__item__title {
+  	padding-left: 7px;
+  }
+}
+
+.form-search {
+	.form-group {
+		float: left;
+	}
+	.btn-search {
+		float: right;
+	}
+}
+
+.inline-nav {
+	.nav-pills {
+		> li {
+			a:active {
+				background-color: @blue;
+				color: #fff;
+				.badge {
+					background-color: #fff;
+					color: @blue;
+				}
+			}
+			&:active {
+				&::after{
+					background-position: -22px -5px;
+					top: 1px;
+				}
+			}
+		}
+	}
+}
+
+.pagination {
+	> li,
+	> li.active {
+		> a:active {
+			background-color: @light_blue;
+			border-color: @light_blue;
+			color: #fff;
+		}
+		&.dots {
+			> span:active {
+				background-color: transparent;
+				border-color: transparent;
+				color: @light_blue;
+			}
+		}
+	}
+}
+
+.items {
+	&__item {
+		&__title {
+			a:active {
+				color: @light_blue;
+			}
+		}
+		&__btn {
+			position: relative;
+			right: auto;
+		}
+	}
+}
+
+.item {
+	&__info {
+		&__print{
+			&:active {
+				span {
+					color: @light_blue;
+				}
+			}
+		}
+	}
+	&-tabs {
+		&__btn {
+			+ .dropdown-menu {
+				> li {
+					> a {
+						&:hover,
+						&:focus {
+							background-color: @light_blue;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.swiper-noi-oferte,
+.swiper-items__item,
+.swiper-item__main
+.swiper-item__thumbs {
+	.swiper-button-prev,
+	.swiper-button-next {
+		&:active {
+			.opacity(0.9,90);
+		}
+	}
+}
+
+.rez-calc__mobile {
+	display: none;
+}
+
+.item__info__puntea__list {
+	.media-body, .media-left, .media-right {
+		display: block;
+	}
+	.media-body {
+		width: auto;
+	}
+	.media-object {
+		margin-bottom: 20px;
+	}
+}
+
+.item__info__excursii__item {
+	> p {
+		padding: 0;
+	}
+	.item__info__download {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.item-tabs .tab-pane .hr-title__hr {
+	display: none;
+}
+
+.item-tabs .tab-pane .hr-title__text {
+	white-space: normal;
+	position: relative;
+	left: auto;
+	.translate(0,0);
+	text-align: center;
+	padding: 0;
+}
+
+.item__info__lpoz {
+	display: inline-block;
+	width: 75%;
+}
+
+.bilete {
+	.sprite-airline {
+		margin: 10px 0;
+	}
+	&-rezervare__detalii {
+		&--border-left {
+			border-left: 0 none;
+			border-bottom: 1px solid @blue;
+			padding-bottom: 10px;
+		}
+		&__img {
+			margin-bottom: 0;
+		}
+		.media-left {
+			margin-left: 0;
+		}
+		.row {
+			> div {
+				margin-left: 10px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		&__pret {
+			text-align: left;
+			margin-top: 0;
+			&__text {
+				text-align: left;
+			}
+		}
+	}
+}
+
+.calendar-nav {
+  .swiper-slide{
+    padding-left:0px;
+    padding-right:0px;
+  }
+	.sprite-swipe-left-white,
+	.sprite-swipe-right-white {
+		//position: relative;
+		//top: 5px;
+	}
+}
+
+.user-loggedin__list {
+	left: auto;
+	right: 0;
+}
+
+
+body .contact-boxes .contact-box > div{background-size:100% 100% !important; }
+
+.aside-filters__price{
+      display: block;
+    margin: 0 auto;
+    margin-bottom: 40px !important;
+}
+
+.plata-rate .col-md-6:first-child{
+  margin-top:0px;
+}
+
+
+.bf-page .sidebar{
+  display:none;
+}
+
+.bf-page .header-bf .nav-tabs{
+  li{
+    width:50%;
+    float:left;
+    margin-bottom:10px;
+    &:last-child{
+          float: none !important;
+        display: inline-block !important;
+    }
+  }
+}
+
+.bf-page{
+  .tab-content .col-sm-8{
+    margin: 0 auto;
+  }
+}
+
+
+html .bf-page .tab-content .img-holder{
+      // height: auto;
+      // max-height: inherit;
+      max-height:135px;
+}
+
+// .bf-page .tab-content .rezerva{
+  // position:relative;
+// }
+
+
+.hundred-years{
+  display:none;
+}
+
+.swiper-circuit__detalii__link{
+  width:100%;
+}
+
+.hr-title .oferte__title{
+  white-space:normal;
+}
+
+.sunny-logo{
+  text-align:center;
+  img{
+    float:none !important;
+  }
+  margin:10px;
+}
+
+.bf-page .bf-countdown .ztz {
+	display: block;
+}
+
+.month-slider .swiper-container > .swiper-button-next {
+	right: 57px;
+}
+
+.month-slider .swiper-container > .swiper-button-prev {
+    left: 57px;
+}
+
+.puzzle-masonry-col6 {
+	.items__item__btn {
+		position: absolute;
+	}
+}

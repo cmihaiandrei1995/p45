@@ -1,0 +1,304 @@
+.visible-ms-block,
+.visible-ms-inline-block,
+.visible-ms-inline {
+  display: none !important;
+}
+
+.visible-xxs-block {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.visible-xxs-inline-block {
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+.visible-xxs-inline {
+  display: inline !important;
+  visibility: visible !important;
+}
+
+.hidden-xxs {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.newsletter--text-align {
+	text-align: center;
+}
+
+.oferte__title {
+	font-size: 30px;
+}
+
+.chartere__item,
+.avantaje__item,
+.calendar-item {
+  max-width: 360px;
+  left: 50%;
+  .translate(-50%,0);
+}
+
+// .swiper-circuit {
+// 	.swiper-pagination {
+// 		text-align: center;
+// 		left: auto;
+// 		top: 250px;
+// 		height: 20px;
+// 	}
+// 	&__img {
+// 		height: 285px;
+// 		width: 100%;
+// 	  -o-object-fit: cover;
+// 		object-fit: cover;
+// 	}
+// 	&__pret__wrapper {
+// 		right: 10px;
+// 	}
+// 	&__detalii {
+// 		position: relative;
+// 		width: 100%;
+// 		background-color: rgba(47, 98, 163, 0.6);
+// 		&__wrapper {
+// 			max-height: 190px;
+// 		}
+// 		&__link {
+// 			margin-right: 0;
+// 		}
+// 	}
+// }
+
+.avantaje {
+	margin-bottom: 0;
+}
+
+.hr-title {
+	&__hr {
+		display: none;
+	}
+	&__text {
+		white-space: initial;
+		position: relative;
+		top: auto;
+		left: auto;
+		.translate(0,0);
+		text-align: center;
+		padding: 0;
+	}
+}
+
+.swiper-main {
+	&__extra {
+		width: 100%;
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.oferte-tab-list {
+	.nav-pills {
+		> li {
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+}
+
+.inner-banner__charter {
+  .img-banner__img__wrapper,
+  .img-banner__img {
+      height: 380px;
+  }
+  .main-filters {
+    top: -360px;
+    margin-bottom: -360px;
+  }
+}
+
+.main-filters__charter {
+	&__title {
+		span {
+			display: block;
+			padding-left: 20px;
+		}
+	}
+	&__sub {
+		position: relative;
+		margin-top: 35px;
+		padding-left: 0;
+	}
+	&__airline__img {
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		top: -25px;
+		margin-left: 0;
+	}
+	&__item {
+		margin-left: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		> ul > li {
+			&:first-child {
+				width: 7%;
+			}
+			&:nth-child(2) {
+				width: 25%;
+			}
+			&:nth-child(3) {
+				width: 45%;
+			}
+			&:nth-child(4) {
+				width: 18%;
+			}
+			&:nth-child(5) {
+				display: none;
+			}
+		}
+	}
+}
+
+.items {
+	&__title {
+		text-align: center;
+	}
+	&__select__wrapper {
+		text-align: center;
+		padding-bottom: 8px;
+	}
+	&__item {
+		&__btn {
+			width: 100% !important;
+		}
+	}
+}
+
+.swiper-item__main {
+	&__img {
+		height: 200px;
+	}
+}
+
+.item-rezervare__info {
+	.item__title {
+		padding-top: 15px;
+	}
+	.item__title,
+	.item__sub,
+	.item__desc {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&__detalii {
+		padding: 15px 15px 15px 35px;
+		&__airline__img {
+			top: 0;
+			margin-left: 0;
+		}
+	}
+}
+
+.item-itinerariu {
+  &__list {
+    &__flights {
+      ul > li {
+      	&:nth-child(1) {
+          width: 7%;
+        }
+        &:nth-child(2) {
+          width: 50%;
+        }
+        &:nth-child(4) {
+          width: 58%;
+          padding-left: 9%;
+        }
+      }
+    }
+  }
+}
+
+.logo-title::after {
+	display: none;
+}
+
+.item__info__porturi {
+	border-top: 0 none;
+	> li {
+		border-bottom-style: solid;
+		&:last-child {
+			border-bottom: 0 none;
+		}
+	}
+	&__list {
+		display: block;
+		> li {
+			display: block;
+			width: 100% !important;
+			margin-left: 0 !important;
+			text-align: left !important;
+			padding: 5px 0;
+			> span {
+				font-size: 15px;
+				color: @blue;
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+			&:first-child {
+				color: @blue;
+			}
+		}
+	}
+}
+
+.item__info__puntea__title {
+	margin-top: 20px;
+}
+
+.user-loggedin {
+	> a > i {
+		margin-left: -20px;
+	}
+	&__list {
+		> li:first-child {
+			text-align: center;
+			border-bottom: 1px solid @light_blue;
+			> a {
+				font-size: 12px;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.login__tabs > li > a {
+	font-size: 14px;
+}
+
+.item__info__whishlist {
+    margin-top: 20px;
+}
+
+.vacation.custom-vacations {
+    .inner-banner-vd .img-banner__img__wrapper.w-svdw {
+        height: 350px;
+
+        .inner-banner-vd .search-vd-wrapper.svdw {
+            margin-top: -280px;
+        }
+    }
+}
+
+.banner {
+    .items__item__btn {
+		width: auto !important;
+	}
+}
+
+.cruises.cruise #detalii-nava .item__info__download {
+    margin-top: 20px;
+}

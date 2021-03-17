@@ -1,0 +1,2 @@
+<a href="<?=$_base?>cron/eurosite/charter/destinations.php" title="Sincronizare Chartere" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Sincronizare destinatii Chartere</a>
+<a href="<?=$_base?>cron/eurosite/destinations/zones.php" title="Sincronizare zone" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Sincronizare zone</a>

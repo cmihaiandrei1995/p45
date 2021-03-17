@@ -1,0 +1,1 @@
+<a href="<?=$_base?>cron/croaziere/ports.php" title="Sincronizare porturi" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Sincronizare porturi</a>

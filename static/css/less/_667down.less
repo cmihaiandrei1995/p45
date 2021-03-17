@@ -1,0 +1,111 @@
+.circuite {
+	display: none;
+}
+
+.items {
+	&__item {
+		.col-ms-4,
+		.col-ms-8,
+		.col-ms-6 {
+			width: 100%;
+		}
+		&__wrapper {
+			&:nth-of-type(2) {
+				text-align: left;
+			}
+		}
+		&__btn {
+			width: 50%;
+			left: 50%;
+			.translate(-50%,0);
+		}
+		&__hotel {
+			.flex-display(flex);
+			> li {
+				&:first-child {
+					order: 2;
+				}
+				&:nth-child(2) {
+					order: 3;
+				}
+				&:nth-child(3) {
+					order: 4;
+				}
+				&:last-child {
+					order: 1;
+					margin-top: 7px;
+					.sprite {
+						-webkit-transform: rotate(-180deg);
+						transform: rotate(-180deg);
+					}
+				}
+			}
+		}
+	}
+}
+
+.swiper-items__item {
+	max-width: 480px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	&__img {
+		max-width: 480px;
+	}
+}
+
+.rez-calc {
+	&__tablet {
+		display: none;
+	}
+	&__mobile {
+		display: block !important;
+	}
+	&__item {
+		text-align: left;
+		padding: 13px 8px;
+		margin-bottom: 15px;
+		&:nth-child(2n) {
+			background-color: #f4f4f4;
+		}
+		&__btn {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		&__price {
+			small {
+				margin-left: 34px;
+			}
+		}
+		p > strong {
+			font-size: 16px;
+		}
+	}
+}
+
+.item-rezervare__info__detalii__btn {
+	padding: 8px 0;
+	width: 100%;
+}
+
+.oferte-tab-list {
+	.tab-pane .col-ms-6 {
+		width: 100%;
+	}
+}
+
+.items__item__croaziere__company__img {
+	margin-top: -10px;
+	margin-bottom: 15px;
+}
+
+.cc-message {
+    font-size: 14px;
+    margin: 5px !important;
+	line-height: 14px;
+}
+
+.banner {
+	.items__item__btn {
+		width: auto;
+	}
+}

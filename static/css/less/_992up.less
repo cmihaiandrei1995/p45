@@ -1,0 +1,887 @@
+.navbar-paralela45 {
+	min-height: auto;
+	.navbar-nav::before,
+	.navbar-nav::after {
+	  display: none;
+	}
+	.container-fluid,
+	.collapse {
+		padding: 0;
+	}
+
+	.dropdown-menu {
+		margin-top: 2px;
+		border-radius: 0;
+		border: 0;
+		padding: 0;
+		background: #f5f9fc;
+
+		.new {
+			color: @orange;
+			font-weight: bold;
+			.upper;
+		}
+
+		.nav-tabs-content {
+			background: white;
+			float: left;
+			width: 190px;
+			//@andrei: height ul asta strica flowul
+			//height: 246px;
+		}
+		//@andrei: fix img dd menu
+		.dropdown-menu-pict {
+			width: 211px;
+			height: 226px;
+			position: relative;
+			background-size: cover !important;
+			background-repeat: no-repeat;
+			background-position: center center;
+			float: left;
+
+			.items__item__btn {
+				bottom: 10px;
+			    right: auto;
+			    -webkit-transform: translateX(-50%);
+			    -moz-transform: translateX(-50%);
+			    -ms-transform: translateX(-50%);
+			    -o-transform: translateX(-50%);
+			    transform: translateX(-50%);
+			    left: 50%;
+				position: absolute;
+			}
+		}
+
+		.nav-tabs {
+			border-bottom: 0;
+
+			>li {
+				float: none;
+				margin: 0;
+			}
+		}
+
+		.tab-content {
+			float: left;
+			padding: 10px 10px 10px 30px;
+		}
+
+		.nav-tabs.full-nav {
+			float: left;
+
+			>li {
+				float: left;
+				margin-right: 30px;
+
+				>ul {
+					border-bottom: 2px solid #dce0e6;
+					padding-bottom: 10px;
+
+					>li {
+						color: @dark_blue;
+						font-size: 13px;
+
+						>a {
+							color: @dark_blue;
+							margin: 0;
+							padding: 0;
+							border: 0;
+							border-radius: 0;
+							font-size: 13px;
+
+							&:hover {
+								color: @blue;
+								background-color: transparent;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.nav-tabs.side-nav {
+			width: 100%;
+
+			>li {
+				border-bottom: 1px solid #f5f9fc;
+
+				a {
+					border-radius: 0;
+					color: @blue;
+					font-size: 13px;
+					background: white;
+					border: 0;
+					margin: 0;
+
+					&:hover {
+						font-weight: bold;
+					}
+				}
+
+				&.active {
+
+					a {
+						background: #f5f9fc;
+						border: 0;
+						color: @dark_blue;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
+
+.navbar-nav-paralela45 {
+	width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+	  > li {
+		  position: relative;
+	  }
+	> li > a {
+		line-height: 20px;
+		padding: 10px 5px;
+		color: #fff;
+		height: 100%;
+
+		&.wiicon {
+			padding-right: 44px;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: @dark_blue;
+			color: #fff;
+		}
+	}
+	> li.active > a {
+		background-color: @dark_blue;
+		color: #fff;
+	}
+
+	> li.marked {
+		> a {
+			background-color: @red;
+		}
+		&.active > a, &:hover > a {
+			background-color: @red;
+			color: #fff;
+		}
+	}
+}
+
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background-color: @dark_blue;
+	color: #fff;
+}
+
+.inner-banner .main-filters {
+	top: -180px;
+	margin-bottom: -180px;
+}
+
+.navbar-nav-paralela45 {
+	> li > a {
+		padding: 10px 5px;
+	}
+}
+
+.circuite-list {
+	padding: 0 40px;
+}
+
+.last-minute {
+	&__list__item {
+		// min-height: 72px;
+		height: 72px;
+		&__second-block {
+			text-align: right;
+		}
+	}
+}
+
+.newsletter__landmarks {
+	margin-top: -60px;
+}
+
+.swiper-noi-oferte {
+	.swiper-button-prev {
+		left: -10px;
+	}
+	.swiper-button-next {
+		right: -10px;
+	}
+}
+
+.swiper-circuit {
+	&__detalii__wrapper {
+		max-height: 61%;
+	}
+}
+
+.swiper-main {
+	.swiper-button-prev {
+		left: ~"calc((100% - 970px)/2)"; //970px container width, 19px img width
+	}
+	.swiper-button-next {
+		right: ~"calc((100% - 970px)/2)"; //970px container width, 19px img width
+	}
+}
+
+//@andrei:
+.oferte-tab-list {
+	.nav-pills {
+		> li {
+			//width: ~"calc(25% - 5px)";
+		}
+	}
+}
+
+.item {
+	&--flex1 {
+		.flex-display(flex);
+	}
+	&__back {
+		display: block;
+		margin-bottom: 25px;
+	}
+	&__info {
+		&--align {
+			text-align: right;
+		}
+		&--space {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		&__wrapper {
+			margin-bottom: 50px;
+		}
+		.fb-share-button {
+			float: left;
+		}
+		&__croaziere {
+			&__title {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+.charters.charters-item, .circuits.circuit, .tourism.tourism-item, .tourism-ro.tourism-item, .charters.charters-item2, .cruises.cruise {
+	.items__item__harta {
+		font-size: 16px;
+	}
+
+	.sprite.sprite-star-l {
+		top: 0;
+
+		&:first-of-type {
+			margin: 0;
+		}
+	}
+
+	.item-tabs .tab-pane {
+		&.active {
+			border: 1px solid @light_blue;
+			margin-top: -1px;
+		}
+
+		&#rezervare {
+			border: 0;
+		}
+	}
+
+	.item-tabs .nav-tabs {
+		position: relative;
+		z-index: 1;
+
+		> li {
+			width: 100%;
+			float: none;
+			padding: 0 5px;
+			background: @light_blue;
+			border: 1px solid @light_blue;
+			margin-bottom: 0;
+
+			> a {
+				text-align: left;
+				margin: 0 5px;
+				height: 40px;
+				line-height: 40px;
+				border: 0;
+				background-color: transparent;
+				position: relative;
+
+				&:after {
+					content: '';
+					height: 1px;
+					width: 100%;
+					background: white;
+					display: block;
+				}
+			}
+
+			&.active, &:hover {
+				border: 1px solid @light_blue;
+				background: white;
+			}
+
+			&.active {
+				border-right: 0;
+
+				a:after {
+					display: none;
+				}
+			}
+
+			&:first-child.active {
+				margin: 0;
+			}
+
+			&:last-child a:after {
+				display: none;
+			}
+		}
+	}
+}
+
+.partners-wrapper .part-cal1 { border-right: 1px solid #2f62a2; }
+
+.item__info__rpoz {
+	left: 50%;
+}
+
+.sprite-airline {
+	margin: 10px 5px;
+}
+
+.login--pad-right {
+	padding-right: 70px;
+}
+
+.login--pad-left {
+	padding-left: 70px;
+}
+
+
+
+
+
+.contact-info {
+      top: -215px;
+}
+
+.img-banner__img__wrapper.uimgbimgw {
+    height: 250px;
+}
+
+.partners-www-wrapper .parters-www-content {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}
+
+/*vacanta-comanda*/
+.inner-banner-vd {
+	.search-vd-wrapper {
+	    margin-top: -270px;
+	    padding-bottom:0;
+	}
+
+	.img-banner__img__wrapper {
+	    height: 360px;
+	}
+}
+
+.instyle .instyle-txt p { width: 70%; }
+
+.vd-from div.form-control.short input { width: 83%; }
+
+.zpull-right { float:right; }
+
+.inner-banner-vd {
+	.img-banner__img__wrapper.w-svdw {
+	    height: 509px;
+	}
+
+	.search-vd-wrapper.svdw {
+	    margin-top: -350px;
+	}
+}
+
+.my-content {
+	margin-top: 0;
+
+	.box {
+		padding: 45px 50px;
+	}
+
+    > ul > li {
+
+	  .delete-from-wishlist {
+		  text-align: right;
+		  display: block;
+	  }
+
+      .dwrow {
+        width: 64.66666667%;
+		position:absolute;
+        bottom:20px;
+        right:15px;
+        padding-left:10px;
+
+        .items__item__btn {
+          margin-top:0;
+          width:auto;
+          position:absolute;
+          right:0;
+        }
+
+        .items__item__harta {
+          width:auto;
+        }
+      }
+    }
+
+    .swiper-items__item__img {
+      margin-bottom:0px;
+    }
+
+    .check-boxes {
+      text-align:right;
+    }
+
+    .passenger-edit .thw-col {
+      margin-bottom:0;
+    }
+}
+
+.block.block-full {
+  height: 270px;
+
+  .block-details {
+    padding:0;
+  }
+}
+
+
+
+
+
+
+.partners-turkey-wrapper{
+  img{
+    width: 8.7%;
+    height:auto;
+  }
+}
+
+
+
+.autosuggest-wrapper {
+    width: 635px;
+	margin-left: -317px;
+
+	ul li {
+		&:nth-child(4) {
+			display: block !important;
+		}
+	}
+}
+
+.hd-page .header-hd .logo-hd {
+    top: -55px;
+    left: 160px;
+}
+
+.hd-page .header-hd .hd-intro {
+	padding-top: 0;
+
+	.hd-img {
+		position: relative;
+	    left: -40%;
+		top: 0;
+	   margin-left: auto;
+   }
+}
+
+.part-cal2 .sprite-partners-new {
+	margin:0 30px !important;
+}
+
+.part-cal3 .sprite-partners-new {
+	margin:0 23px !important;
+}
+
+#price-swiper .swiper-price-chart {
+    padding: 130px 0 50px 40px;
+	margin: 0;
+}
+
+#price-swiper #sw-price-wrapper {
+    padding: 0 50px 0 0;
+    height: 325px;
+}
+
+#price-swiper #sw-price-wrapper .sw-price-inner .sw-price-prev {
+	left: -30px;
+}
+
+#price-swiper #sw-price-wrapper .sw-price-inner .sw-price-next {
+	right: -30px;
+}
+
+#price-swiper .price-chart-left {
+    margin: 30px 0px 0 30px;
+}
+
+#price-swiper {
+    height: 340px;
+}
+
+#price-swiper #sw-price-wrapper .sw-price-inner {
+  width:600px;
+  margin-left:30px;
+}
+
+#price-swiper .swiper-price-chart {
+  padding: 130px 0 50px 0;
+}
+
+#price-swiper .price-item .price-item-separator {
+	display:block;
+}
+
+.col-lg-fifth {
+  position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+      float: left;
+      width:20%;
+}
+
+.home_forms-wrapper {
+	top: -160px;
+	margin-bottom: -160px;
+	height: 160px;
+	transition: all 0.3s ease-in-out;
+	padding-bottom: 0;
+
+	&.fhw-inner {
+		top: 0;
+		margin: 0;
+	}
+
+	.main-filters__list {
+	    border: 0;
+	    margin-top: -65px;
+	}
+
+	&.hfw-extensive {
+		top: -247px;
+		margin-bottom: -247px;
+		height: 247px;
+	}
+
+	&.hfw-more-extensive {
+		top: -297px;
+		margin-bottom: -297px;
+		height: 297px;
+	}
+}
+
+.rules-contest, .ordonanta, .rules-nl {
+	.home_forms-wrapper {
+		min-height: 160px;
+		padding: 20px 0;
+	}
+}
+
+#chartere, #turism-individual, #turism-intern, #croaziere {
+	margin-top: 33px;
+}
+
+.puzzle-masonry-col4 {
+	.tall {
+		margin-top: 0;
+	}
+}
+
+.newhome-circuit-section {
+	.newhome-circuit-section-intro {
+	    height: 175px;
+		margin-bottom: 0;
+	}
+}
+
+.newhome-turism-intern-section {
+	.chartere {
+		&__item {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.footer .footer-social-wrapper {
+	line-height: 43px;
+	padding: 0;
+}
+.footer__links__social-list {
+    margin-bottom: 0;
+    display: inline-block;
+	float: left;
+}
+
+.puzzle-masonry-col4 {
+	.verytall {
+		height: 465px;
+	}
+	.swiper-circuit {
+		.swiper-slide {
+		    height: 465px;
+		}
+	}
+}
+
+.puzzle-masonry-col6 {
+	.swiper-circuit {
+		.swiper-slide {
+		    height: 506px;
+		}
+
+		&__detalii {
+			width: 50%;
+		}
+	}
+}
+
+.circuits-onesection {
+	.swiper-circuit {
+		.swiper-pagination {
+            right: 32%;
+        }
+
+        &__detalii {
+			width: 30%;
+		}
+    }
+}
+
+.item-filters-wrapper, .cruises.cruise .tab-content {
+    margin-left: -1px;
+	margin-top: 0;
+}
+
+.cruises.cruise .tab-content {
+	margin-top: 1px;
+}
+
+.top-10-destinations {
+	.inner-banner-vd p.l01 {
+	    font-size: 42px;
+		line-height: 40px;
+	}
+
+	.search-vd-wrapper.svdw {
+		margin-top: -190px;
+	}
+
+	.top10dest-list {
+		li {
+			font-size: 18px;
+
+			.destination {
+				font-size: 30px;
+				line-height: 33px;
+			}
+		}
+	}
+}
+
+.puzzle-masonry {
+	.tall.last-of-type {
+		img {
+			height: 445px;
+		}
+
+		.category-txt {
+    		top: 12%;
+			-webkit-transform: translate(0,0);
+			-moz-transform: translate(0,0);
+			-ms-transform: translate(0,0);
+			-o-transform: translate(0,0);
+			transform: translate(0,0);
+		}
+	}
+}
+
+.puzzle-masonry-inner-oneplusfour {
+	.tall {
+		margin-top: 0;
+
+		img {
+		    height: 250px;
+		}
+
+		// aici am dubii
+		// &.first-item {
+		// 	margin-top: 8px;
+		// }
+	}
+}
+
+.banner {
+    width: 100%;
+	float: none;
+
+    &.ondrkbg {
+		margin-left: 0;
+    }
+}
+//@andrei: 
+.oferte-tab-list {
+
+	.nav-pills {
+		text-align: center;
+
+		> li {
+			margin-right: 20px;
+			float: none;
+			display: inline-block;
+
+			&:after {
+			    display: none;
+			}
+
+			a {
+				padding: 10px;
+			}
+		}
+	}
+}
+
+.revolut-adv {
+	img {
+		margin-top: 0;
+	}
+}
+
+.revolut-about {
+	.steps .vert-divider {
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translate(-50%,0);
+		-moz-transform: translate(-50%,0);
+		-ms-transform: translate(-50%,0);
+		-o-transform: translate(-50%,0);
+		transform: translate(-50%,0);
+		height: 100%;
+		width: 3px;
+		background: white;
+	}
+
+	.steps h3 {
+	    font-size: 21px;
+	    line-height: 27px;
+	    margin-bottom: 60px;
+	}
+
+	.onleft, .onright {
+		padding: 0 30px;
+	}
+
+	.onleft {
+		margin-bottom: 0;
+	}
+
+	.onright {
+		.btn {
+			margin-top: 98px;
+		}
+	}
+
+	.tell {
+        margin-bottom: 82px;
+    }
+}
+
+.list2col {
+	column-count: 2;
+}
+
+.cruises.cruise {
+
+	#detalii-nava {
+		.media-list {
+			.media {
+				margin-top: 55px;
+			}
+		}
+	}
+}
+
+.my-account-wrapper {
+	.container {
+		> .row {
+			margin-right: -5px;
+			margin-left: -5px;
+
+			> div {
+				padding-right: 5px;
+				padding-left: 5px;
+			}
+		}
+	}
+}
+
+.cookies, .terms, .vacations-lease, .tourist-contract, .tourist-contract-pj, .fidelity-card, .vouchers, .franchise, .privacy {
+
+	.aside-filters-sidebar {
+		margin-bottom: 0;
+	}
+
+	.p-util-wrapper {
+		.col-md-9 {
+			h1, h3 {
+				font-size: 32px;
+			}
+		}
+	}
+}
+
+.whentravel {
+	img {
+		max-width: initial;
+	}
+
+	.whentravel-bg {
+		.tag {
+			-webkit-transform: translate(-50%,205%);
+			-moz-transform: translate(-50%,205%);
+			-ms-transform: translate(-50%,205%);
+			-o-transform: translate(-50%,205%);
+			transform: translate(-50%,27050%);
+		}
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%,-15%);
+			-moz-transform: translate(-50%,-15%);
+			-ms-transform: translate(-50%,-15%);
+			-o-transform: translate(-50%,-15%);
+			transform: translate(-50%,-15%);
+			max-width: min-content;
+			z-index: 1;
+		}
+	}
+}

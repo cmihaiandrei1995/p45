@@ -1,0 +1,822 @@
+.col-ms-1,
+.col-ms-2,
+.col-ms-3,
+.col-ms-4,
+.col-ms-5,
+.col-ms-6,
+.col-ms-7,
+.col-ms-8,
+.col-ms-9,
+.col-ms-10,
+.col-ms-11,
+.col-ms-12 {
+	position:relative;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.visible-ms-block,
+.visible-ms-inline-block,
+.visible-ms-inline {
+  display: none !important;
+}
+
+.hover-opacity {
+	&:hover,
+	&:focus {
+		color: #fff;
+		opacity: 0.8;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	}
+}
+
+.last-minute {
+	&__list {
+		&__item:hover,
+		&__item:focus {
+			background-color: #fff;
+		}
+	}
+	&__btn {
+		&:hover,
+		&:focus {
+			strong {
+				color: #fff;
+			}
+		}
+		&--green {
+			border-color: @green;
+			&:hover,
+			&:focus {
+				background-color: @green;
+			}
+		}
+		&--blue {
+			border-color: @blue;
+			&:hover,
+			&:focus {
+				background-color: @blue;
+			}
+		}
+		&--orange {
+			border-color: @orange;
+			&:hover,
+			&:focus {
+				background-color: @orange;
+			}
+		}
+	}
+}
+
+.chartere {
+	&__item {
+		// &__link:not(.hover-opacity):hover {
+		// 	.chartere__item__title {
+		// 		height: ~"calc(100% + 35px)";
+		// 	}
+		// }
+		&__link.oneitemlink:hover {
+			.chartere__item__title {
+				height: auto;
+			}
+		}
+		&--large {
+			.chartere__item__link:not(.hover-opacity):hover {
+				.chartere__item__title {
+					height: ~"calc(100% + 44px)";
+				}
+			}
+		}
+	}
+}
+
+.puzzle-masonry-col4 {
+	.chartere {
+		&__item {
+			&__link.oneitemlink:hover {
+				.chartere__item__title {
+					height: 42px;
+				}
+			}
+		}
+	}
+}
+
+.puzzle-masonry-col6 {
+	.chartere {
+		&__item {
+			&__link.oneitemlink:hover {
+				.chartere__item__title {
+					height: 20px;
+				}
+				//@andrei: added to fix 2 lines title hover
+				.chartere__item__title_fix {
+					height: auto !important;
+				}
+			}
+			//@andrei: Added to fix 2 lines title
+			&__link.oneitemlink {
+				.chartere__item__title_fix {
+					height: auto !important;
+				}
+			}
+		}
+	}
+}
+
+.swiper-circuit {
+	&__detalii__wrapper {
+		max-height: 50%;
+	}
+}
+
+.footer__payment {
+	float: right;
+}
+
+.main-filters {
+	.panel-heading{
+    display:none;
+  }
+  .panel{
+    border:none;
+    box-shadow:none;
+  }
+  .panel-default {
+  	border-radius: 0;
+  }
+  .panel-collapse{
+    height:auto;
+    &.collapse{
+      display:block;
+    }
+  }
+}
+
+.inner-banner .main-filters {
+	top: -230px;
+	margin-bottom: -230px;
+}
+
+.img-banner {
+	&__img {
+		height: 250px;
+		&__wrapper {
+			height: 250px;
+		}
+	}
+}
+
+//@andrei:
+.oferte-tab-list {
+	.nav-pills {
+		> li {
+			//width: ~"calc(33% - 5px)";
+			> a:hover,
+			> a:focus {
+				background-color: @blue;
+				color: #fff;
+			}
+			&.active {
+				> a:hover,
+				> a:focus {
+					background-color: @blue;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.inline-nav {
+	.nav-pills {
+		> li {
+			a:hover,
+			a:focus {
+				background-color: @blue;
+				color: #fff;
+				.badge {
+					background-color: #fff;
+					color: @blue;
+				}
+			}
+			&:hover,
+			&:focus {
+				&::after{
+					background-position: -22px -5px;
+					top: 1px;
+				}
+			}
+		}
+	}
+}
+
+.aside-filters {
+	.gutter-left {
+		padding-left: 5px;
+	}
+	.gutter-right {
+		padding-right: 5px;
+	}
+}
+
+.pagination {
+	> li,
+	> li.active {
+		> a:hover,
+		> a:focus {
+			background-color: @light_blue;
+			border-color: @light_blue;
+			color: #fff;
+		}
+		&.dots {
+			> span:hover,
+			> span:focus {
+				background-color: transparent;
+				border-color: transparent;
+				color: @light_blue;
+			}
+		}
+	}
+}
+
+.items {
+	&__item {
+		&__title {
+			a:hover,
+			a:focus {
+				color: @light_blue;
+			}
+		}
+	}
+}
+
+.item {
+	&__info {
+		&__print{
+			&:hover,
+			&:focus {
+				span {
+					color: @light_blue;
+				}
+			}
+		}
+	}
+	&-tabs {
+		&__btn {
+			+ .dropdown-menu {
+				> li {
+					> a {
+						&:hover,
+						&:focus {
+							background-color: #fff;
+							color: @light_blue;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.swiper-noi-oferte,
+.swiper-items__item,
+.swiper-item__main,
+.swiper-item__thumbs {
+	.swiper-button-prev,
+	.swiper-button-next {
+		&:hover,
+		&:focus {
+			.opacity(0.9,90);
+		}
+	}
+}
+
+.item__info__rpoz {
+	position: absolute;
+	left: 65%;
+}
+
+.bilete {
+	&-rezervare__detalii {
+		> .row {
+			.col-sm-2 {
+				width: ~"calc(100% / 5);";
+			}
+		}
+	}
+}
+
+.main-filters__btn-cauta {
+	&:hover,
+	&:focus {
+		background: #fff;
+		color: @green;
+		border-color: @green;
+	}
+}
+
+.items__item__btn,
+.item__info__btn,
+.item-formular__btn,
+.item-rezervare__info__detalii__btn,
+.bilete-rezervare__btn,
+.bilete-rezervare__detalii__btn,
+.login__form__btn {
+	&:hover,
+	&:focus {
+		background: rgba(0,0,0,0);
+		color: @green;
+		border-color: @green;
+	}
+}
+
+.item__info__print,
+.item__info__download {
+	&:hover,
+	&:focus {
+		span {
+			color: @blue;
+		}
+	}
+}
+
+.oferte-tab-list__item > a {
+	&:hover,
+	&:focus {
+    color: @blue;
+  }
+}
+
+.swiper-main {
+	.swiper-button-prev:hover {
+		.sprite-swipe-left-white-l {
+			display: inline-block;
+		}
+		.sprite-swipe-left-blue {
+			display: none;
+		}
+	}
+	.swiper-button-next:hover {
+		.sprite-swipe-right-white-l {
+			display: inline-block;
+		}
+		.sprite-swipe-right-blue {
+			display: none;
+		}
+	}
+}
+
+
+
+.agencies-tab-list .town_agencies .town_agencies_info {
+      border-right: 1px solid #afafaf;
+}
+
+.agencies-tab-list .town_agencies li img {
+  margin-bottom:0;
+}
+
+.partners-wrapper .part-cal2 { border-right: 1px solid #2f62a2; }
+
+.contact-info {
+    top: -80px;
+}
+
+.inner-banner-contact .img-banner__img { height: 250px; }
+
+.agencies-tab-list .one-agency .map { margin-top:0; }
+
+.colonaj {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+     column-count: 3;
+ }
+
+.img-banner__img__wrapper.uimgbimgw {
+    height: 103px;
+}
+
+.wwpro { width:70%; }
+
+.plata { width:60%; }
+
+/*vacanta-comanda*/
+.inner-banner-vd .search-vacanta {
+      padding-bottom: 35px;
+}
+
+.inner-banner .main-filters__label--padding {
+    padding: 0 25px;
+}
+
+.inner-banner-vd .img-banner__img__wrapper {
+  height: 570px;
+}
+
+.inner-banner-vdws .img-banner__img { height:570px; }
+
+.inner-banner-vd .search-vd-wrapper {
+  margin-top:-510px;
+}
+
+.inner-banner-vd-form-categ {
+  .vd-form-top { top:-180px; }
+
+  .img-banner__img__wrapper, .img-banner__img { height: 265px; }
+}
+
+.calendar-nav.month-slider .col-md-4.swiper-slide.swiper-slide-next span, .calendar-nav.month-slider .col-md-4.swiper-slide.swiper-slide-prev span {
+  display:inline-block;
+}
+
+.rez-calc__item_mobile {
+  font-size:13px;
+  line-height: 30px;
+}
+
+.tl { text-align:center; }
+
+.db-padd-left{
+  padding:0px 2px 0px 15px;
+}
+
+.db-padd{
+  padding:0px 2px;
+}
+
+.db-padd-right{
+  padding:0px 15px 0px 2px;
+}
+
+
+.partners-turkey-wrapper{
+  img{
+    width: 16%;
+  }
+ }
+
+.blue-bg .vacation-lp-chartere-item{
+  height:330px;
+}
+
+.autosuggest-wrapper {
+    width: 485px;
+	margin-left: -242px;
+}
+
+.autosuggest_more {
+	height: 98px;
+	display: flex;
+	align-items: center;
+}
+
+.form-inline .form-control {
+	width: 100%;
+}
+
+.bf-page .bf-intro {
+  margin-top: -38px;
+}
+
+.bf-page .bf-countdown .countdown, .hd-page .hd-countdown .countdown {
+  margin-left: 55px;
+}
+
+.bf-page .tab-content h2, .hd-page .tab-content h2 {
+  &:before {
+        height: 1px;
+        background: white;
+        width: 130px;
+        content: '';
+        margin-right: 12px;
+        display: inline-block;
+        position: relative;
+        top: -6px;
+      }
+
+      &:after {
+        height: 1px;
+        background: white;
+        width: 130px;
+        content: '';
+        margin-left: 12px;
+        display: inline-block;
+        position: relative;
+        top: -6px;
+      }
+}
+
+.hd-page .tab-content h2:before, .hd-page .tab-content h2:after {
+	background: #0a0e29;
+}
+
+.bf-countdown .ztz, .hd-countdown .ztz {
+	top: -30px;
+	margin-right: 50px;
+}
+
+.call-txt {
+	text-align: left;
+}
+
+.hd-page .header-hd .logo-hd {
+    top: -55px;
+}
+
+.hd-page .header-hd .hd-intro {
+	padding-top: 330px;
+
+	.hd-img {
+		top: 30px;
+		margin-left: -510px;
+		max-width: 954px;
+	}
+}
+
+.part-cal2 .sprite-partners-new {
+	margin:0 15px !important;
+}
+
+.part-cal3 .sprite-partners-new {
+	margin:0 11px !important;
+}
+
+.new-about .colonajintow {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+
+.new-about .images-about-recon div:nth-child(1) img {
+	width: 60% !important;
+}
+
+.new-about .images-about-recon div:nth-child(2) img {
+	width: 50% !important;
+}
+
+.new-about .images-about-recon div:nth-child(3) img {
+	width: 50% !important;
+}
+
+.new-about .images-about-recon div:nth-child(4) img {
+	width: 40% !important;
+}
+
+.home_forms-wrapper {
+	background: rgba(10,14,41,.8);
+	height: 100%;
+	position: relative;
+	z-index: 10;
+	margin-top: 0;
+
+	.main-filters {
+
+		&__list {
+			border: 0;
+		    margin-top: -79px;
+
+			&__item {
+				margin-left: 1px;
+				margin-right: 1px;
+				background-color: transparent;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+				// &__title {
+				// 	color: #fff;
+				// 	font-size: 14px;
+				// 	font-weight: 500;
+				// 	line-height: 1;
+				// 	text-transform: uppercase;
+				// 	padding-left: 5px;
+				// }
+				&__link {
+					background-color: rgba(255,255,255,.75);
+					padding: 12px 15px;
+					height: 100%;
+				}
+
+				&__title {
+					color: @dark_blue;
+					font-weight: bold;
+					display: block;
+					text-align: center;
+				}
+
+				&.active {
+					background-color: transparent;
+					margin-top: -9px;
+
+					.main-filters__list__item {
+						&__link {
+							background-color: rgba(10,14,41,.8);
+							padding: 22px 15px 12px 15px;
+
+							.main-tabs-icon {
+								background-position: right;
+							}
+						}
+						&__title {
+							color: white;
+						}
+					}
+					.sprite {
+						&.active {
+							display: inline-block;
+						}
+						&.inactive {
+							display: none;
+						}
+					}
+				}
+
+				&:hover {
+					.main-tabs-icon {
+						background-position: right;
+					}
+				}
+			}
+		}
+
+		&__label {
+			color: white;
+		}
+
+		&__btn-cauta {
+			// margin-top: 19px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+// .puzzle-masonry-col4 {
+// 	.swiper-circuit .swiper-pagination {
+// 	    right: 50%;
+// 		margin-right: -100px;
+// 	}
+// }
+
+.croaziere-intro-wrapper {
+	padding: 55px 0 55px 20px;
+
+	.croaziere-intro-listare {
+		.row {
+			margin: 0;
+
+			> div {
+				padding: 15px;
+			}
+		}
+	}
+}
+
+.logo-title__text {
+	font-size: 30px;
+}
+
+.text-sm-right {
+	text-align: right;
+}
+
+.top-10-destinations, .vacante-exotice {
+	.page-intro {
+		font-size: 18px;
+		color: #2f62a2;
+		text-align: center;
+		margin: 30px 0 60px 0;
+	}
+}
+
+.top-10-destinations {
+	.top10dest-list {
+		li {
+			margin-bottom: 60px;
+
+			.img {
+				height: 338px;
+
+				.img-banner__img {
+					height: 338px;
+				}
+			}
+
+			.destination-about {
+				height: 338px;
+
+				p {
+					height: 228px;
+					overflow: hidden;
+				}
+			}
+		}
+	}
+
+	.item-filters__btn {
+		bottom: 0;
+		right: 0;
+		margin: 0;
+		position: absolute;
+	}
+}
+
+.puzzle-masonry {
+	.category-txt {
+	    padding: 45px;
+
+		.item-filters__btn {
+		    margin-top: 35px;
+		}
+	}
+
+	.puzzle-masonry .regular {
+		&.first-of-type {
+		    margin: 0;
+		}
+	}
+}
+
+.guides .guides-list > div {
+	&:after {
+		margin-bottom: 60px;
+	}
+
+	&:nth-child(odd):after {
+	    width: 130%;
+	}
+}
+
+.guide .margin--top-30 .hr-title {
+    margin-bottom: 60px;
+}
+
+.testimonial.testimonials {
+	.modal {
+		.modal-content {
+			.modal-body {
+				padding: 25px 35px 15px 35px;
+			}
+		}
+		.modal-dialog {
+			width: 750px;
+		}
+	}
+}
+
+.testimonials-page-intro {
+	#all-testimonials, .add-test {
+		margin-top: 0;
+	}
+
+	.zpull-right {
+	    float: right;
+	}
+}
+
+.about-gallery {
+	.col-12, .col-ms-6 {
+		padding-left:10px;
+		padding-right:10px;
+	}
+}
+
+.cruises.cruise {
+	#detalii-nava {
+		.media-list {
+			.media {
+				margin-top: 35px;
+			}
+		}
+	}
+}
+
+.my-content {
+	.box {
+		padding: 30px;
+		margin-bottom: 55px;
+	}
+}
+
+.abonare.subscription {
+	.subscription-wrapper {
+		.form-wrapper {
+			form {
+				> .row {
+				    margin-right: -5px;
+				    margin-left: -5px;
+
+					> div {
+						padding-right: 5px;
+    					padding-left: 5px;
+					}
+				}
+			}
+		}
+	}
+}

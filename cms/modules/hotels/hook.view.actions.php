@@ -1,0 +1,4 @@
+<a href="<?=$_base?>cron/eurosite/hotel/grile.php" title="Sincronizare grile" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Sincronizare grile</a>
+<a href="<?=$_base?>cron/eurosite/hotel/minprice_homepage.php" title="Update preturi home" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Update preturi home</a>
+<a href="<?=$_base?>cron/eurosite/hotel/minprice_special.php" title="Update preturi tab-uri" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Update preturi tab-uri</a>
+<a href="<?=$_base?>cron/eurosite/hotel/hotels.php" title="Sincronizare hoteluri" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Sincronizare hoteluri</a>

@@ -1,0 +1,2 @@
+<a href="<?=$_base?>cron/eurosite/circuit/destinations.php" title="Sincronizare destinatii" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Sincronizare destinatii</a>
+<a href="<?=$_base?>cron/eurosite/circuit/circuits.php?all" title="Sincronizare circuite" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Sincronizare circuite</a>

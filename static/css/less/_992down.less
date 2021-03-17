@@ -1,0 +1,288 @@
+/* Navbar breakpoint change */
+.navbar-header {
+   float: none;
+}
+.navbar-left,.navbar-right {
+  float: none !important;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+  margin-top: 7.5px;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.collapse.in{
+  display:block !important;
+}
+
+.navbar-paralela45 {
+	min-height: 42px;
+}
+
+.navbar-toggle {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	padding-right: 0;
+	.icon-bar {
+		background-color: #fff;
+	}
+}
+
+.navbar-nav .open .dropdown-menu {
+  position: static;
+  float: none;
+  width: auto;
+  margin-top: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* END Navbar breakpoint change */
+
+
+.plata-rate-sub {
+	padding-bottom: 10px;
+}
+
+.last-minute {
+	&__list__item {
+		&__second-block {
+			.last-minute__list__item__pret,
+			.last-minute__list__item__details {
+				// padding-left: 18px;
+			}
+		}
+	}
+	&__title {
+		font-size: 18px;
+	}
+	&__btn {
+		font-size: 13px;
+	}
+}
+
+.item {
+	&__back {
+		&__wrapper {
+			margin-bottom: 10px;
+		}
+	}
+	&__info {
+		&__print {
+			margin-top: 30px;
+			// margin-bottom: 35px;
+		}
+		&__hotel {
+			.flex-display(flex);
+			> li {
+				&:first-child {
+					order: 2;
+				}
+				&:nth-child(2) {
+					order: 3;
+				}
+				&:nth-child(3) {
+					order: 4;
+				}
+				&:last-child {
+					order: 1;
+					margin-top: 7px;
+					.sprite {
+						-webkit-transform: rotate(-180deg);
+						transform: rotate(-180deg);
+					}
+				}
+			}
+		}
+		.fb-share-button {
+			float: right;
+		}
+		&__download {
+			margin-top: 20px;
+		}
+	}
+}
+
+.rez-calc {
+	&__tablet {
+		.rez-calc__item__btn {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.aside-filters {
+	&__sub {
+		position: relative;
+		.sprite-down-black {
+			display: inline-block;
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			.translate(0,-50%);
+		}
+	}
+}
+
+.motto{
+  display:none;
+}
+
+.plata-rate .col-md-6:last-child{
+  text-align:center;
+}
+
+.bf-page .sidebar .sidebar-group ul{
+  padding-left:0px;
+}
+
+
+.bf-page .sidebar .sidebar-group h3 .icon{
+  display:none;
+}
+
+html .bf-page .header-bf .nav-tabs li a{
+      padding: 8px 18px;
+}
+
+.bf-page .header-bf .nav-tabs li{
+  margin-right:0px;
+}
+
+
+.bf-page .tab-content .box{
+     min-height:360px;
+
+  }
+
+
+
+.advanced-selectors-xs{
+  .col-xs-12{
+    width: 20%;
+    padding:3px;
+    // &:first-child{
+    //   padding-left:15px;
+    // }
+
+    &:last-child{
+      padding-right:15px;
+    }
+  }
+}
+
+.advanced-selectors-xs-room{
+  width:42.5%;
+}
+
+.text-hover-vacantions{
+     h3{
+      margin-top:50px;
+    }
+
+  }
+
+  .vacation-video{
+    iframe{
+      width:100% !important;
+    }
+  }
+
+.header-bf, .header-hd {
+  text-align:center;
+  padding-bottom: 20px;
+}
+
+.footer-logo-img {
+    max-height: 80px;
+    width: auto;
+}
+
+#price-swiper .price-item .price-item-date {
+    left:50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#price-swiper .price-item .price-item-tooltip {
+    opacity: 1;
+    visibility: visible;
+    border: 0;
+    top: -35px;
+    width: auto;
+    padding: 0;
+    left: auto;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    background: transparent;
+
+    &:before, &:after {
+        display: none;
+    }
+
+    .title, .promo {
+        display: none;
+    }
+}
+
+#price-swiper .price-item.blue .price-item-tooltip,
+#price-swiper .price-item.green .price-item-tooltip {
+    border:0;
+}
+
+#price-swiper .swiper-slide {
+    width: 40px;
+}
+
+#price-swiper .price-item {
+    width: 40px;
+
+    .price-item-column-wrapper {
+        width: 40px;
+    }
+}
+
+#price-swiper .swiper-price-chart {
+    padding-top: 70px;
+}
+
+#price-swiper .price-item .price-item-tooltip .sub .no-resp {
+    display: none;
+}
+
+.benefits-wrapper {
+    .benefits {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,2 @@
+<a href="<?=$_base?>cron/typeforms/sync_forms.php" title="Sincronizare formulare" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Sincronizare formulare</a>
+<a href="<?=$_base?>cron/typeforms/sync_responses.php" title="Sincronizare raspunsuri" target="_blank" class="mb-xs mt-xs mr-xs btn btn-default"><i class="fa fa-exchange"></i> Sincronizare raspunsuri</a>
